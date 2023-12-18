@@ -53,11 +53,16 @@ By default, the script will create a folder named `separated_stems` where to sav
 
 `$ python separate -i /path/to/the/folder/containing/your/audio/files -o /path/to/output/folder/` 
 
-Optionally, you can run a LarsNet version implementing α-Wiener filtering. This is done by specifying the option `-w` followed by a postive floating-point number indicating the exponent α to be applied: 
+Optionally, you can run a LarsNet version implementing **α-Wiener filtering** by specifying the option `-w` followed by a postive floating-point number indicating the exponent α to be applied, e.g., 
 
 `$ python separate -i /path/to/the/folder/containing/your/audio/files -w 1.0` 
 
 This latter version is expected to reduce cross-talk artifacts between separated stems, but might introduce side-chain compression-like artifacts.
+
+Lastly, you can specify the device using the `-d` option (default: `cpu`)
+
+`$ python separate -i /path/to/the/folder/containing/your/audio/files -d cuda:0` 
+
 
 ## Audio Examples 🎧
 Audio examples are available on our [GitHub page](https://polimi-ispl.github.io/larsnet/)

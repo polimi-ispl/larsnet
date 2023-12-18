@@ -8,11 +8,11 @@ global:
 
 
 inference_models:
-  kick:     'saved_models/kick/kick_checkpoint.pth'
-  snare:    'saved_models/snare/snare_checkpoint.pth'
-  toms:     'saved_models/toms/toms_checkpoint.pth'
-  hihat:    'saved_models/hihat/hihat_checkpoint.pth'
-  cymbals:  'saved_models/cymbals/cymbals_checkpoint.pth'
+  kick:     'pretrained_larsnet_models/kick/pretrained_kick_unet.pth'
+  snare:    'pretrained_larsnet_models/snare/pretrained_snare_unet.pth'
+  toms:     'pretrained_larsnet_models/toms/pretrained_toms_unet.pth'
+  hihat:    'pretrained_larsnet_models/hihat/pretrained_hihat_unet.pth'
+  cymbals:  'pretrained_larsnet_models/cymbals/pretrained_cymbals_unet.pth'
 
 
 data_augmentation:

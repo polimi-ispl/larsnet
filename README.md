@@ -6,7 +6,9 @@ Totaling **1224 hours of audio**, StemGMD is the largest dataset of drums to dat
 
 We leverage StemGMD to develop and release **LarsNet**, a new deep drums demixing model that can separate five stems from a stereo drum mixture faster than real-time using a parallel arrangement of dedicated U-Nets.
 
-📜 The paper "_Toward Deep Drum Source Separation_" authored by A. I. Mezza, R. Giampiccolo, A. Bernardini, and A. Sarti has been submitted to *Pattern Recognition Letters*.
+📝 The paper "_Toward Deep Drum Source Separation_" authored by A. I. Mezza, R. Giampiccolo, A. Bernardini, and A. Sarti has been submitted to *Pattern Recognition Letters*.
+
+📍 ["_Toward Deep Drum Source Separation_" is available as a preprint on arXiv.](https://arxiv.org/abs/2312.09663)
 
 ## StemGMD 🎵
 **StemGMD is freely available on [Zenodo](https://zenodo.org/records/7860223) under the CC-BY 4.0 license.**
@@ -26,13 +28,24 @@ StemGMD contains isolated stems of 9 canonical drum pieces:
 
 These stems were obtained applying the MIDI mapping described in Appendix B of [(Gillick et al., 2019)](https://arxiv.org/abs/1905.06118).
 
-## Separate a drum track using LarsNet
+## LarsNet 🥁
 
-First, download the pretrained models ⚠️ **[soon available]** ⚠️
+**To the best of our knowledge, LarsNet is the first publicly-available deep drum demxing model.**
 
-Then, modify the `inference_models` paths in `config.py` as needed.
+LarsNet can separate 5 stems from a stero drum mixture:
+- **Kick Drum**
+- **Snare**
+- **Tom-Toms** (High, Mid-Low, and Floor tom)
+- **Hi-Hat** (Open and Closed Hi-Hat)
+- **Cymbals** (Crash and Ride Cymbals)
 
-Finally, on your terminal, simply run 
+## Separate a drum track using LarsNet ✂️
+
+First, download the **pretrained LarsNet models** by [clicking here](https://polimi365-my.sharepoint.com/:u:/r/personal/10391311_polimi_it/Documents/pretrained_larsnet_models.zip?download=1) 📥
+
+Then, unzip the folder and place it in the project directory. Alternatively, modify the `inference_models` paths in `config.py` as needed.
+
+Finally, simply run the following command on your terminal:
 
 `$ python separate -i /path/to/the/folder/containing/your/audio/files` 
 
@@ -43,6 +56,8 @@ By default, the script will create a folder named `separated_stems` where to sav
 Optionally, you can run a LarsNet version implementing α-Wiener filtering. This is done by specifying the option `-w` followed by a postive floating-point number indicating the exponent α to be applied: 
 
 `$ python separate -i /path/to/the/folder/containing/your/audio/files -w 1.0` 
+
+This latter version is expected to reduce cross-talk artifacts between separated stems, but might introduce side-chain compression-like artifacts.
 
 ## Audio Examples 🎧
 Audio examples are available on our [GitHub page](https://polimi-ispl.github.io/larsnet/)

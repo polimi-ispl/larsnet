@@ -61,7 +61,7 @@ Optionally, you can run a LarsNet version implementing **α-Wiener filtering** b
 
 `$ python separate -i /path/to/the/folder/containing/your/audio/files -w 1.0` 
 
-This latter version is expected to reduce cross-talk artifacts between separated stems, but might introduce side-chain compression-like artifacts.
+This latter version is expected to reduce cross-talk artifacts between separated stems, but might introduce side-chain compression-like artifacts. Namely, choosing α∊(0, 1) would result in more bleed, whereas α>1 risk increasing the so-called ducking effect.
 
 Lastly, you can specify the device using the `-d` option (default: `cpu`)
 

@@ -41,7 +41,7 @@ LarsNet can separate five stems from a stero drum mixture:
 
 ## Separate a drum track using LarsNet ✂️
 
-**Download the pretrained LarsNet models by [clicking here](https://polimi365-my.sharepoint.com/:u:/r/personal/10391311_polimi_it/Documents/pretrained_larsnet_models.zip?download=1)** 📥 (562 MB)
+**Download the pretrained LarsNet models by [clicking here](https://drive.google.com/uc?id=1kR17K5tFLCHlXG2v3vZ6C5Xa6uWGyfCE&export=download)** 📥 (562 MB)
 
 Unzip the folder and place it in the project directory. Alternatively, modify the `inference_models` paths in `config.py` as needed.
 

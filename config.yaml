@@ -7,7 +7,7 @@ global:
   prefetch_factor:      6
 
 
-checkpoints:
+inference_models:
   kick:     'saved_models/kick/kick_checkpoint.pth'
   snare:    'saved_models/snare/snare_checkpoint.pth'
   toms:     'saved_models/toms/toms_checkpoint.pth'

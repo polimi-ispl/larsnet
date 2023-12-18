@@ -28,7 +28,7 @@ class LarsNet(nn.Module):
         self.wiener_filter = wiener_filter
         self.wiener_exponent = wiener_exponent
         self.return_stft = return_stft
-        self.stems = config['checkpoints'].keys()
+        self.stems = config['inference_models'].keys()
         self.utils = UNetUtils(device=self.device)
         self.sr = config['global']['sr']
 
@@ -38,7 +38,7 @@ class LarsNet(nn.Module):
         print('Loading UNet models...')
         pbar = tqdm(self.stems)
         for stem in pbar:
-            checkpoint_path = Path(config['checkpoints'][stem])
+            checkpoint_path = Path(config['inference_models'][stem])
             pbar.set_description(f'{stem} {checkpoint_path.stem}')
 
             F = config[stem]['F']

@@ -39,11 +39,15 @@ LarsNet can separate five stems from a stero drum mixture:
 - **Hi-Hat** (Open and Closed Hi-Hat)
 - **Cymbals** (Crash and Ride Cymbals)
 
+## Pretrained LarsNet Models 📥 
+
+Pretrained LarsNet model can be found [here](https://drive.google.com/uc?id=1kR17K5tFLCHlXG2v3vZ6C5Xa6uWGyfCE&export=download) (562 MB)
+
 ## Separate a drum track using LarsNet ✂️
 
-**Download the pretrained LarsNet models by [clicking here](https://drive.google.com/uc?id=1kR17K5tFLCHlXG2v3vZ6C5Xa6uWGyfCE&export=download)** 📥 (562 MB)
+First, [download](https://drive.google.com/uc?id=1kR17K5tFLCHlXG2v3vZ6C5Xa6uWGyfCE&export=download) the pretrained models.   
 
-Unzip the folder and place it in the project directory. Alternatively, modify the `inference_models` paths in `config.py` as needed.
+Then, unzip the folder and place it in the project directory. Alternatively, modify the `inference_models` paths in `config.py` as needed.
 
 Finally, run the following command on your terminal:
 

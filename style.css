@@ -179,6 +179,10 @@ tr.even td {
     background-color: white;
 }
 
+tr.title td {
+    border-left: 0px solid;
+}
+
 h1 {
   /*color: #596350;*/
   /*color: #00965e;*/

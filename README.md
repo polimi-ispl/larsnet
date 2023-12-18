@@ -28,7 +28,11 @@ These stems were obtained applying the MIDI mapping described in Appendix B of [
 
 ## Separate a drum track using LarsNet
 
-On your terminal, simply run 
+First, download the pretrained models ⚠️ **[soon available]** ⚠️
+
+Then, modify the `inference_models` paths in `config.py` as needed.
+
+Finally, on your terminal, simply run 
 
 `$ python separate -i /path/to/the/folder/containing/your/audio/files` 
 
@@ -44,7 +48,8 @@ Optionally, you can run a LarsNet version implementing α-Wiener filtering. This
 Audio examples are available on our [GitHub page](https://polimi-ispl.github.io/larsnet/)
 
 ## Beyond Drums Demixing
-The structure of StemGMD follows that of Magenta's GMD. Therefore, the metadata from GMD is preserved in StemGMD, including `drummer`, `session`, `style`, `bpm`, `beat_type`, `time_signature`, `duration`, `split`.
+The structure of StemGMD follows that of Magenta's Groove MIDI Dataset (GMD). Therefore, GMD metadata is preserved in StemGMD, including `drummer`, `session`, `style`, `bpm`, `beat_type`, `time_signature`, `duration`, `split`. 
+
 This extends the applications of StemGMD beyond Deep Drums Demixing.
 
-Therefore, StemGMD can rival other large-scale datasets, such as **Expanded Groove MIDI Dataset** ([E-GMD](https://arxiv.org/abs/2004.00188)), for tasks such as Automatic Drum Transcription when considering the countless possbilities for data augmentation that having isolated stems allows for.
+In fact, we argue that StemGMD can rival other large-scale datasets, such as **Expanded Groove MIDI Dataset** ([E-GMD](https://arxiv.org/abs/2004.00188)), for tasks such as Automatic Drum Transcription when considering the countless possbilities for data augmentation that having isolated stems allows for.

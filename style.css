@@ -8,11 +8,12 @@
 
 a:link {
   color:  #424242;/*#80927c;*/
-  text-decoration: underline; 
+  text-decoration: underline;
 }
 
 a:visited {
   color:  #3b3b3b;
+  text-decoration: underline;
 }
 
 a:hover {

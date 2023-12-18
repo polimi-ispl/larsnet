@@ -41,8 +41,7 @@ LarsNet can separate five stems from a stero drum mixture:
 
 ## Pretrained LarsNet Models 📥 
 
-
-Pretrained LarsNet model can be found [here](https://drive.google.com/uc?id=1U8-5924B1ii1cjv9p0MTPzayb00P4qoL&export=download) (562 MB)
+Pretrained LarsNet model checkpoints can be found [here](https://drive.google.com/uc?id=1U8-5924B1ii1cjv9p0MTPzayb00P4qoL&export=download) (562 MB) licensed under CC BY-NC 4.0.
 
 ## Separate a drum track using LarsNet ✂️
 

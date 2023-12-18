@@ -41,15 +41,15 @@ LarsNet can separate 5 stems from a stero drum mixture:
 
 ## Separate a drum track using LarsNet ✂️
 
-First, download the **pretrained LarsNet models** by [clicking here](https://polimi365-my.sharepoint.com/:u:/r/personal/10391311_polimi_it/Documents/pretrained_larsnet_models.zip?download=1) 📥
+**Download the pretrained LarsNet models by [clicking here](https://polimi365-my.sharepoint.com/:u:/r/personal/10391311_polimi_it/Documents/pretrained_larsnet_models.zip?download=1)** 📥 (562 MB)
 
-Then, unzip the folder and place it in the project directory. Alternatively, modify the `inference_models` paths in `config.py` as needed.
+Unzip the folder and place it in the project directory. Alternatively, modify the `inference_models` paths in `config.py` as needed.
 
-Finally, simply run the following command on your terminal:
+Finally, run the following command on your terminal:
 
 `$ python separate -i /path/to/the/folder/containing/your/audio/files` 
 
-By default, the script will create a folder named `separated_stems` where to save the results. Alternatively, you can specify the output directory as follows:
+By default, the script will create a folder named `separated_stems` where to save the results. Alternatively, you can specify the output directory by using the `-o` option:
 
 `$ python separate -i /path/to/the/folder/containing/your/audio/files -o /path/to/output/folder/` 
 

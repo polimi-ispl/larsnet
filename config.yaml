@@ -1,0 +1,75 @@
+global:
+  sr:                   44100     # Hz
+  segment:              11.85     # seconds
+  shift:                2         # seconds
+  sample_rate:          44100     # Hz
+  n_workers:            16
+  prefetch_factor:      6
+
+
+checkpoints:
+  kick:     'saved_models/kick/kick_checkpoint.pth'
+  snare:    'saved_models/snare/snare_checkpoint.pth'
+  toms:     'saved_models/toms/toms_checkpoint.pth'
+  hihat:    'saved_models/hihat/hihat_checkpoint.pth'
+  cymbals:  'saved_models/cymbals/cymbals_checkpoint.pth'
+
+
+data_augmentation:
+  augmentation_prob:          0.5
+  kit_swap_augment_prob:      0.5
+  doubling_augment_prob:      0.3
+  pitch_shift_augment_prob:   0.3
+  saturation_augment_prob:    0.3
+  channel_swap_augment_prob:  0.5
+  remix_augment_prob:         0.3
+
+
+kick:
+  F:                    2048
+  T:                    512
+  batch_size:           24
+  learning_rate:        1e-4
+  epochs:               22
+  training_mode:        'stft'
+  model_id:             'default_kick_unet'
+
+
+snare:
+  F:                    2048
+  T:                    512
+  batch_size:           24
+  learning_rate:        1e-4
+  epochs:               22
+  training_mode:        'stft'
+  model_id:             'default_snare_unet'
+
+
+toms:
+  F:                    2048
+  T:                    512
+  batch_size:           24
+  learning_rate:        1e-4
+  epochs:               22
+  training_mode:        'stft'
+  model_id:             'default_toms_unet'
+
+
+hihat:
+  F:                    2048
+  T:                    512
+  batch_size:           24
+  learning_rate:        1e-4
+  epochs:               22
+  training_mode:        'stft'
+  model_id:             'default_hihat_unet'
+
+
+cymbals:
+  F:                    2048
+  T:                    512
+  batch_size:           24
+  learning_rate:        1e-4
+  epochs:               22
+  training_mode:        'stft'
+  model_id:             'default_cymbals_unet'

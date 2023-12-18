@@ -8,7 +8,7 @@
 
 a:link {
   color:  #424242;/*#80927c;*/
-  text-decoration: none; 
+  text-decoration: underline; 
 }
 
 a:visited {

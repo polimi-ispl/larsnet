@@ -67,6 +67,9 @@ Lastly, you can specify the device using the `-d` option (default: `cpu`)
 
 `$ python separate -i /path/to/the/folder/containing/your/audio/files -d cuda:0` 
 
+## Training LarsNet 🛠️
+
+We are working toward releasing the scripts for fine-tuning or training LarsNet from scratch. The code will be available soon.
 
 ## Audio Examples 🎧
 Audio examples are available on our [GitHub page](https://polimi-ispl.github.io/larsnet/)

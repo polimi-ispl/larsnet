@@ -30,8 +30,6 @@ These stems were obtained by applying the MIDI mapping described in Appendix B o
 
 ## LarsNet 🥁
 
-**To the best of our knowledge, LarsNet is the first publicly-available deep drum demxing model.**
-
 LarsNet can separate five stems from a stereo drum mixture:
 - **Kick Drum**
 - **Snare**

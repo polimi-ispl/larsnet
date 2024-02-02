@@ -49,21 +49,21 @@ Then, unzip the folder and place it in the project directory. Alternatively, mod
 
 Finally, run the following command on your terminal:
 
-`$ python separate -i /path/to/the/folder/containing/your/audio/files` 
+`$ python separate.py -i /path/to/the/folder/containing/your/audio/files` 
 
 By default, the script will create a folder named `separated_stems` where to save the results. Alternatively, you can specify the output directory by using the `-o` option:
 
-`$ python separate -i /path/to/the/folder/containing/your/audio/files -o /path/to/output/folder/` 
+`$ python separate.py -i /path/to/the/folder/containing/your/audio/files -o /path/to/output/folder/` 
 
 Optionally, you can run a LarsNet version implementing [α-Wiener filtering](https://doi.org/10.1109/ICASSP.2015.7177973) by specifying the option `-w` followed by a postive floating-point number indicating the exponent α to be applied, e.g., 
 
-`$ python separate -i /path/to/the/folder/containing/your/audio/files -w 1.0` 
+`$ python separate.py -i /path/to/the/folder/containing/your/audio/files -w 1.0` 
 
 This latter version is expected to reduce cross-talk artifacts between separated stems, but might introduce side-chain compression-like artifacts. Namely, choosing α∊(0, 1) would result in more bleed, whereas α≥1 risk increasing the so-called ducking effect.
 
 Lastly, you can specify the device using the `-d` option (default: `cpu`)
 
-`$ python separate -i /path/to/the/folder/containing/your/audio/files -d cuda:0` 
+`$ python separate.py -i /path/to/the/folder/containing/your/audio/files -d cuda:0` 
 
 ## Train LarsNet 🛠️
 

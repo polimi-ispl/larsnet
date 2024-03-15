@@ -1,4 +1,4 @@
-# Deep Drums Demixing 🥁
+# Deep Drum Source Separation 🥁
 
 We introduce **StemGMD**, a large-scale multi-kit audio dataset of isolated single-instrument drum stems. Each audio clip is synthesized from MIDI recordings of expressive drums performances from Magenta's [Groove MIDI Dataset](https://magenta.tensorflow.org/datasets/groove) using ten real-sounding acoustic drum kits. 
 

@@ -6,9 +6,21 @@ Totaling **1224 hours of audio**, StemGMD is the largest dataset of drums to dat
 
 We leverage StemGMD to develop and release **LarsNet**, a new deep drums demixing model that can separate five stems from a stereo drum mixture faster than real-time using a parallel arrangement of dedicated U-Nets.
 
-📝 The paper "_Toward Deep Drum Source Separation_" authored by A. I. Mezza, R. Giampiccolo, A. Bernardini, and A. Sarti has been submitted to *Pattern Recognition Letters*.
+📝 The open access paper "_**Toward Deep Drum Source Separation**_" authored by A. I. Mezza, R. Giampiccolo, A. Bernardini, and A. Sarti has been published on *Pattern Recognition Letters*: [https://doi.org/10.1016/j.patrec.2024.04.026](https://doi.org/10.1016/j.patrec.2024.04.026)
 
-📍 ["_Toward Deep Drum Source Separation_" is now available as a preprint on arXiv.](https://arxiv.org/abs/2312.09663)
+```
+@article{larsnet,
+  title = {Toward deep drum source separation},
+  journal = {Pattern Recognition Letters},
+  volume = {183},
+  pages = {86-91},
+  year = {2024},
+  issn = {0167-8655},
+  doi = {https://doi.org/10.1016/j.patrec.2024.04.026},
+  url = {https://www.sciencedirect.com/science/article/pii/S0167865524001351},
+  author = {Alessandro Ilic Mezza and Riccardo Giampiccolo and Alberto Bernardini and Augusto Sarti}
+}
+```
 
 ## StemGMD 🎵
 **StemGMD is freely available on [Zenodo](https://zenodo.org/records/7860223) under the CC-BY 4.0 license.**
